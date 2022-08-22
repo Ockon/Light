@@ -27,7 +27,7 @@ Simply download Light here on GitHub or on NPM. Then open your prefered CMD and 
 At Ockon, we know it can be hard to learn a new language, and to fix bugs in one that has a small community. That's why we have a dedicated webpage for documentation and help. Just visit Ockon.com/Documentation and everything you need will be at your fingertips.
     
         
-**How can I help the developers**
+**How can I help the developers?**
     
         
 We constantly update this language and our website for you to use for free. Because of this, however, we do not make any money from our work. If you would like to support us and our future endeavors, visit Ockon.com/Support. The money will go directly to supporting us and will help us make this language even better.
