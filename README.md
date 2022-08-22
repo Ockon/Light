@@ -33,3 +33,9 @@ At Ockon, we know it can be hard to learn a new language, and to fix bugs in one
 We constantly update this language and our website for you to use for free. Because of this, however, we do not make any money from our work. If you would like to support us and our future endeavors, visit Ockon.com/Support. The money will go directly to supporting us and will help us make this language even better.
 
 
+**CURRENT BUILD**
+
+
+ALPHA 0.1
+
+First official release of the Light programming language by Ockon. Able to do complex mathematical calculations and minor variable programs.
