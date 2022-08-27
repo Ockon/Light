@@ -40,6 +40,7 @@ We constantly update this language and our website for you to use for free. Beca
 
 
 **CURRENT BUILD**
+
 ALPHA 0.2
 
 Second official release for Light. Officially makes it a lang instead of just a program by allowing you to create and edit files through the CMD. Also adds some fun things like "COLORFUL" printing some colorful text (does not work on some CMDs). Added "PRINT" to print input to the terminal. Added "RANDOM" to generate random numbers.
