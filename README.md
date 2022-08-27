@@ -46,7 +46,7 @@ Second official release for Light. Officially makes it a lang instead of just a 
 
 ALPHA 0.2.1
 
-Fixed "VERSION", "BUILD", and "HELP" dates and releases
+Fixed "DOCUMENTATION", "BUILD", and "HELP" dates and releases
 
 **LAST BUILD**
 ALPHA 0.1
