@@ -7,6 +7,7 @@ from strings_with_arrows import *
 import string
 import os
 import math
+import random
 
 #######################################
 # CONSTANTS
@@ -146,6 +147,10 @@ KEYWORDS = [
   'HELP',
   'DOCUMENTATION',
   'BUILD',
+  'PRINT',
+  'COLORFUL',
+  'RANDOM',
+  'CREATE',
 ]
 
 class Token:
@@ -646,13 +651,20 @@ class Parser:
       exit()
 
     if self.current_tok.matches(TT_KEYWORD, 'HELP'):
+      print('')
       print('Possible commands:')
       print('------------------------')
       print('Math:')
       print('"RETURN", "CONTINUE", "EXIT", "BREAK", "VAR", "HELP", "IF", "FOR", "WHILE", "FUN", "int", "float", "identifier", "+", "-", "(", "[" or "NOT"')
       print('')
+      print('CMD:')
+      print('"PRINT", "RANDOM"')
+      print('')
       print('Others:')
       print('"EXIT", "HELP", "DOCUMENTATION", "BUILD"')
+      print('')
+      print('FUN:')
+      print('"COLORFUL"')
       print('')
       res.register_advancement()
       self.advance()
@@ -681,14 +693,65 @@ class Parser:
       self.advance()
       return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
 
+    if self.current_tok.matches(TT_KEYWORD, 'COLORFUL'):
+      print('')
+      print("\033[31;1;4mHello\033[0m")
+      print('')
+      print('This may appear as nothing but "31;1;4mHello\033[0m" . If that is the case, you are not running a modern CMD. Please upgrade your CMD for the full experience.')
+      print('')
+      res.register_advancement()
+      self.advance()
+      return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
+
+    if self.current_tok.matches(TT_KEYWORD, 'PRINT'):
+      print1 = input('ENTER PRINT: ')
+      print(print1)
+      res.register_advancement()
+      self.advance()
+      return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
+
+    list1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+    if self.current_tok.matches(TT_KEYWORD, 'RANDOM'):
+      rtype = input('RANDOM TYPE: ')
+      
+      if rtype == '1':
+        rand_num = random.randint(0,9999)
+        print(rand_num)
+
+      if rtype != '1':
+        print('ERROR: No such random type exists')
+
+      res.register_advancement()
+      self.advance()
+      return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
+
+    if self.current_tok.matches(TT_KEYWORD, 'CREATE'):
+      createname = input('NEW FILE NAME: ')
+      createsyntax = input('SYNTAX: ')
+
+      #if createname or createsyntax == 'HELP':
+      #  print('Set name to what you would like your file name to be. Set syntax to what code you would like your file to contain. NOTE: FILES ARE CREATED IN PYTHON')
+      #  res.register_advancement()
+      #  self.advance()
+      #  return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
+
+      #else
+      fp = open(createname + '.py', 'w')
+      fp.write(createsyntax)
+      fp.close()
+      res.register_advancement()
+      self.advance()
+      return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
+    
     expr = res.register(self.expr())
     if res.error:
       return res.failure(InvalidSyntaxError(
         self.current_tok.pos_start, self.current_tok.pos_end,
-        "Expected 'RETURN', 'BUILD', 'CONTINUE', 'EXIT', 'HELP', 'DOCUMENTATION', BREAK', 'VAR', 'IF', 'FOR', 'WHILE', 'FUN', int, float, identifier, '+', '-', '(', '[' or 'NOT'"
+        "Expected 'RETURN', 'BUILD', 'PRINT', CONTINUE', 'EXIT', 'RANDOM', 'HELP', 'DOCUMENTATION', BREAK', 'VAR', 'IF', 'FOR', 'WHILE', 'FUN', 'COLORFUL', int, float, identifier, '+', '-', '(', '[' or 'NOT'"
       ))
     
     return res.success(expr)
+    
 
 
 
