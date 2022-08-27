@@ -658,7 +658,7 @@ class Parser:
       print('"RETURN", "CONTINUE", "EXIT", "BREAK", "VAR", "HELP", "IF", "FOR", "WHILE", "FUN", "int", "float", "identifier", "+", "-", "(", "[" or "NOT"')
       print('')
       print('CMD:')
-      print('"PRINT", "RANDOM"')
+      print('"PRINT", "RANDOM", "CREATE"')
       print('')
       print('Others:')
       print('"EXIT", "HELP", "DOCUMENTATION", "BUILD"')
@@ -675,7 +675,7 @@ class Parser:
       print('For documentation or help visit:')
       print('Ockon.com/Documentation')
       print('')
-      print('NOTE: AS OF ALPHA 0.1 THE WEBSITE IS NOT ONLINE')
+      print('NOTE: AS OF ALPHA 0.2 THE WEBSITE IS NOT ONLINE')
       print('')
       res.register_advancement()
       self.advance()
@@ -684,10 +684,10 @@ class Parser:
     if self.current_tok.matches(TT_KEYWORD, 'BUILD'):
       print('')
       print('VERSION:')
-      print('ALPHA 0.1')
+      print('ALPHA 0.2.1')
       print('')
       print('RELEASE DATE:')
-      print('AUGUST 21, 2022')
+      print('AUGUST 26, 2022')
       print('')
       res.register_advancement()
       self.advance()
@@ -710,7 +710,6 @@ class Parser:
       self.advance()
       return res.success(ContinueNode(pos_start, self.current_tok.pos_start.copy()))
 
-    list1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
     if self.current_tok.matches(TT_KEYWORD, 'RANDOM'):
       rtype = input('RANDOM TYPE: ')
       
