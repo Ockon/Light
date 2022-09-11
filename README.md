@@ -1,55 +1,45 @@
 # Light
-A revolutionary way to code
+### A revolutionary way to code
  
     
     
 **What is this place?**
     
     
-Welcome to the Light programming language. Light is designed to be a light weight, terminal-based programming language that grants a CMD the powers of an IDE. It is simple and easy to use, and is updated regularly to add new and amazing features
+Welcome to the Light IDE. Light is designed to be a light weight, terminal-based IDE that grants a CMD the powers of a large scale, text-based development enviornment. It is simple and easy to use, and is updated regularly to add new and amazing features
     
     
 **What can it do?**
     
     
-Light is designed to be versatile enough to be able to handle almost anything you can throw at it. Currently, it is best at complex mathmatical calculations, and simple variables and tasks. Our plan is to constantly add better support for programs that are able to produce text and visuals.
+Light is designed to be versatile enough to be able to handle almost anything you can throw at it. It can program in any language, any time. It can open files you didnt even know were there, and edit like you have never seen before.
         
         
 **How do I install it?**
         
         
-Simply download Light here on GitHub or on NPM. Then open your prefered CMD and run the program. It should run easily, right out of the box. 
-
-**NOTE:** as of Alpha 0.1 Light is not on NPM and cannot be installed easily
+As of Alpha 2.0, simple download it from GitHub and follow the [installation instructions](https://github.com/Ockon/Light/blob/main/Documentation/Installation.MD).
     
         
 **What if I need help?**
     
         
-At Ockon, we know it can be hard to learn a new language, and to fix bugs in one that has a small community. That's why we have a dedicated webpage for documentation and help. Just visit Ockon.com/Documentation and everything you need will be at your fingertips.
-
-**NOTE:** as of Alpha 0.1 the website is not online
+Light is a brand new and revolutionary language, so finding fixes to bugs can be hard. That's why we created the Documentation page. Simply visit the [development page](https://github.com/Ockon/Light/blob/main/Documentation/Documentation.MD) and any question you have about programming with Light will be answered.
     
         
-**How can I help the developers?**
-    
+**How can I help the developers?** 
         
-We constantly update this language and our website for you to use for free. Because of this, however, we do not make any money from our work. If you would like to support us and our future endeavors, visit Ockon.com/Support. The money will go directly to supporting us and will help us make this language even better.
-
-**NOTE:** as of Alpha 0.1 the website is not online
+We constantly update this IDE and our website for developers to use for free. Because of this, however, we do not make any money from our work. If you would like to support us and our future endeavors please spread the word about the IDE, as the more traffic that comes through, the better chances we have of getting recognition for our work.
 
 
-**CURRENT BUILD**
+## CURRENT BUILD
+ALPHA 2.0
 
-ALPHA 0.2
+Alpha 2.0 is the largest change to the new Light yet. A complete rework of the Error system allows for faster and more accurate runtime errors. Customize to your liking with an overhall of the text color system. Read and write faster with 90% faster load times over old versions. Write in complete control with the power of truncate, a new feature that enables you to chose exactly what the file contains.
 
-Second official release for Light. Officially makes it a lang instead of just a program by allowing you to create and edit files through the CMD. Also adds some fun things like "COLORFUL" printing some colorful text (does not work on some CMDs). Added "PRINT" to print input to the terminal. Added "RANDOM" to generate random numbers.
+For more information about Alpha 2.0 click [here](https://github.com/Ockon/Light/blob/main/Documentation/Version.MD).
 
-ALPHA 0.2.1
+## LAST BUILD
+ALPHA 1.0
 
-Fixed "DOCUMENTATION", "BUILD", and "HELP" dates and releases
-
-**LAST BUILD**
-ALPHA 0.1
-
-First official release of the Light programming language by Ockon. Able to do complex mathematical calculations and minor variable programs.
+Yay made it past the 0.x phase! Alpha 1.0 is a complete redesign of the IDE from the ground up. Gone are the days of using a useless keywords system and errors that dont represent much, aswell as useless math functions. Now, the entire enviornment is dedicated completely to the creation and editing of files. You can create and name any file with whatever name you chose, and dictate the contents yourself. You can also open previousely created python files and add to them. 
