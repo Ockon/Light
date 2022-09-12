@@ -35,7 +35,7 @@ We constantly update this IDE and our website for developers to use for free. Be
 ## CURRENT BUILD
 ALPHA 2.0
 
-Alpha 2.0 is the largest change to the new Light yet. A complete rework of the Error system allows for faster and more accurate runtime errors. Customize to your liking with an overhall of the text color system. Read and write faster with 90% faster load times over old versions. Write in complete control with the power of truncate, a new feature that enables you to chose exactly what the file contains.
+Alpha 2.0 is the largest change to the new Light yet. A complete rework of the Error system allows for faster and more accurate runtime errors. Customize to your liking with an overhall of the text color system. Read and write quicker with 90% faster load times over old versions. Write in complete control with the power of truncate, a new feature that enables you to chose exactly what the file contains.
 
 For more information about Alpha 2.0 click [here](https://github.com/Ockon/Light/blob/main/Documentation/Version.MD).
 
