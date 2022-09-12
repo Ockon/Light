@@ -18,7 +18,7 @@ Light is designed to be versatile enough to be able to handle almost anything yo
 **How do I install it?**
         
         
-As of Alpha 2.0, simple download it from GitHub and follow the [installation instructions](https://github.com/Ockon/Light/blob/main/Documentation/Installation.MD).
+As of Alpha 2.0, simply download it from GitHub and follow the [installation instructions](https://github.com/Ockon/Light/blob/main/Documentation/Installation.MD).
     
         
 **What if I need help?**
