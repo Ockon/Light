@@ -24,7 +24,7 @@ As of Alpha 2.0, simply download it from GitHub and follow the [installation ins
 **What if I need help?**
     
         
-Light is a brand new and revolutionary language, so finding fixes to bugs can be hard. That's why we created the Documentation page. Simply visit the [development page](https://github.com/Ockon/Light/blob/main/Documentation/Documentation.MD) and any question you have about programming with Light will be answered.
+Light is a brand new and revolutionary language, so finding fixes to bugs can be hard. That's why we created the Documentation page. Simply visit the [documentation page](https://github.com/Ockon/Light/blob/main/Documentation/Documentation.MD) and any question you have about programming with Light will be answered.
     
         
 **How can I help the developers?** 
