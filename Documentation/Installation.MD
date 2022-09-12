@@ -10,7 +10,7 @@ To install the Light IDE:
 
 **colorama not installing**
 
-You may want to try ```pip install colorama``` instead of the longer version. If the problem persists, visit colorama [here](https://pypi.org/project/colorama/)
+You may want to try ```pip install colorama``` instead of the longer version. If the problem persists, visit colorama [here](https://pypi.org/project/colorama/).
 
 **Python not running the program**
 
