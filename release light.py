@@ -1,5 +1,4 @@
 from asyncore import write
-#from panel import top_panel
 import time
 import sys
 import shutil
@@ -67,18 +66,17 @@ while looper == 1:
             elif command == 'DOCUMENTATION':
                 print('Ockon.com/documentation')
                 print('')
-                print('As of alpha 1.0 the website is not online, we apologise for any inconvenience')
-                print('you can currently find documentation at https://github.com/Ockon/Light/blob/main/Documentation.MD')
+                print('you can currently find documentation at https://github.com/Ockon/Light/blob/main/Documentation/Documentation.MD')
                 print('')
                 looper = 1
                 toplooper = 1
             elif command == 'BUILD':
                 print('')
                 print('VERSION:')
-                print('ALPHA 1.0')
+                print('ALPHA 2.0')
                 print('')
                 print('RELEASE DATE:')
-                print('SEPTEMBER 4, 2022')
+                print('SEPTEMBER 10, 2022')
                 print('')
                 looper = 1
                 toplooper = 1
@@ -159,10 +157,8 @@ while looper == 1:
             cncate = input('TRUNCATE (1) / START FROM LAST LINE (2) > ')
             if cncate == '1':
                fp.truncate(0)
-               #looper = 2
                toplooper = 2
             elif cncate == '2':
-               #looper = 2
                toplooper = 2   
             else:
                 print(Fore.RED)
